@@ -1,0 +1,4 @@
+{
+  "product": "Cerveza",
+  "prize": "25.99"
+}

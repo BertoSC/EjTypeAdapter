@@ -121,13 +121,10 @@ public class Ej3Main {
                                                 case "age":
                                                     edadF = jsonReader.nextString();
                                                     break;
-
                                             }
                                         }
                                         amigos.add(new Persona(nombreF, edadF));
                                         jsonReader.endObject();
-
-
                                     }
                                     jsonReader.endArray();
                                     break;
@@ -135,8 +132,6 @@ public class Ej3Main {
                         }
 
                         jsonReader.endObject();
-
-
                         Persona persona = new Persona(nombre, edad);
                         persona.setDireccion(dir);
                         persona.setAmigos(amigos);

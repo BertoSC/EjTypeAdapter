@@ -1,0 +1,8 @@
+{
+  "name": "María",
+  "age": "32",
+  "adress": {
+    "street": "Abalorios",
+    "city": "Fene"
+  }
+}

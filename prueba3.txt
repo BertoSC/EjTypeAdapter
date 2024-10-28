@@ -1,0 +1,30 @@
+{
+  "name": "Paco",
+  "age": "35",
+  "adress": {
+    "street": "Abalorios",
+    "city": "Fene"
+  },
+  "friends": [
+    {
+      "name": "Chris Cornell",
+      "age": "35"
+    },
+    {
+      "name": "Wayne Stanley",
+      "age": "25"
+    },
+    {
+      "name": "Peter Steele",
+      "age": "46"
+    },
+    {
+      "name": "Peter Murphy",
+      "age": "60"
+    },
+    {
+      "name": "Jimmy Bower",
+      "age": "57"
+    }
+  ]
+}
