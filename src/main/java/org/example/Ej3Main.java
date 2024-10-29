@@ -29,6 +29,11 @@ public class Ej3Main {
 
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
+                        .registerTypeAdapter(Persona.class, new PersonaAdapter()).create();
+
+        /*
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
                 .registerTypeAdapter(Persona.class, new TypeAdapter<Persona>() {
                     @Override
                     public void write(JsonWriter jsonWriter, Persona persona) throws IOException {
@@ -138,7 +143,7 @@ public class Ej3Main {
                         return persona;
                     }
                 }).create();
-
+         */
         System.out.println(gson.toJson(p3));
 
         try (var in = Files.newBufferedWriter(Path.of("prueba3.txt"))) {

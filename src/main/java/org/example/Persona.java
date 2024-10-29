@@ -1,6 +1,7 @@
 package org.example;
 
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Persona {
@@ -8,6 +9,7 @@ public class Persona {
     String edad;
     Direccion direccion;
     List<Persona> amigos;
+    String [] hobbies;
 
     public Persona(String n, String e) {
         this.nombre = n;
@@ -47,6 +49,14 @@ public class Persona {
         this.amigos = amigos;
     }
 
+    public String[] getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(String[] hobbies) {
+        this.hobbies = hobbies;
+    }
+
     @Override
     public String toString() {
         return "Persona{" +
@@ -54,6 +64,7 @@ public class Persona {
                 ", edad='" + edad + '\'' +
                 ", direccion=" + direccion +
                 ", amigos=" + amigos +
+                ", hobbies=" + Arrays.toString(hobbies) +
                 '}';
     }
 }
